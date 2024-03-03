@@ -78,3 +78,15 @@ while licznik < len(lista):
     licznik +=1
 else:
     print('koniec')
+# mozna przerwac działanie petli funkcja break
+lista2 = [1,2,23,4,5,435,43,6,45,6,7,7,6,78,43,34,43,15]
+wejscie = sys.stdin.readline()
+i=0
+while i < len(lista2):
+    i = i + 1
+    if int(wejscie) - int(lista[i]) == 0:
+        print(i, lista2[i])
+    else:
+        print('nie ma takiej liczby')
+
+

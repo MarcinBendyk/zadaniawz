@@ -1,5 +1,6 @@
 import sys
-a = 2
+import math
+"""a = 2
 b = 'lol'
 c = 'h'
 print(a)
@@ -88,5 +89,41 @@ while i < len(lista2):
         print(i, lista2[i])
     else:
         print('nie ma takiej liczby')
+import math
+def rownanie_kwadratowe(a,b,c):
+    delta = b ** 2 -4 *a*c
+    if delta < 0:
+        print("brak rozwiązan")
+        return 0
+    elif delta == 0:
+        print('jeden pierwiastek')
+        return -b/2
+    else:
+        print('dwa pierwiastki ')
+        x1 = -b - math.sqrt(delta)/2*a
+        x2 = -b + math.sqrt(delta)/2*a
+        return x1,x2
+print(rownanie_kwadratowe(2,3,4))
 
-
+def dlugosc_odcinka(x1,x2,y1,y2):
+    return math.sqrt((x2-x1)**2 + (y2-y1)**2)
+print(dlugosc_odcinka(1,2,34,5))
+print(dlugosc_odcinka(3,32,4,55))
+print(dlugosc_odcinka(45,5423,43,23))
+plik = open("tekst.txt", "r", encoding="utf-8")
+znak = plik.read(10)
+linia = plik.readline()
+linie = plik.readline()
+plik.close()
+print(znak)
+print(linia)
+print(linie)
+plik  = open("tekst", 'a+')
+plik.write('aaaaaa')
+plik.seek(105)
+znaki = plik.read(10)
+plik.close()
+print(znaki)
+with open('tekst.txt', 'r') as plik:
+    zanki = plik.read(10)
+print(znaki)"""
